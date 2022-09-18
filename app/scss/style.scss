@@ -160,3 +160,29 @@ body{
         font-weight: 700;
     }
 }
+//time
+.time {
+    margin-top: 100px;
+    font-family: Verdana, Geneva, sans-serif;
+}
+.time__title {
+    margin-bottom: 80px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: normal;
+    line-height: 1.1;
+}
+.time__box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+.time__inner {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.time__name {
+    font-weight: bold;
+}
