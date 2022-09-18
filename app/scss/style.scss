@@ -301,3 +301,107 @@ body{
     font-weight: 700;
     text-align: center;
 }
+
+@media(max-width: 1100px) {
+    .time__box {
+        gap: 20px;
+    }
+}
+@media(max-width: 850px) {
+    .locksmith__title {
+        font-size: 30px;
+    }
+    .troubleshooting__title {
+        font-size: 26px;
+    }
+    .time__box {
+        grid-template-columns: 1fr;
+        gap: 80px;
+    }
+    .time__inner {
+        flex-direction: column;
+    }
+    .doorOpening__box {
+        grid-template-columns: 1fr;
+    }
+}
+@media(max-width: 767px) {
+    .locksmith__box {
+        grid-template-columns: 1fr;
+    }
+    .locksmith__right {
+        align-items: center;
+    }
+    .troubleshooting__box {
+        grid-template-columns: 1fr;
+    }
+    .team__box {
+        grid-template-columns: 1fr;
+    }
+    .time__title {
+        font-size: 26px;
+    }
+    .time {
+        margin-top: 60px;
+    }
+    .team {
+        margin-top: 60px;
+    }
+    .troubleshooting {
+        margin-top: 60px;
+    }
+    .ambulance__box {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .ambulance__title {
+        margin-bottom: 30px;
+    }
+    .partner__box {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+}
+@media(max-width: 550px) {
+    .services__box {
+        flex-direction: column;
+    }
+}
+@media(max-width: 425px) {
+    .locksmith__title {
+        font-size: 23px;
+    }
+    .troubleshooting__title {
+        font-size: 21px;
+        text-align: center;
+    }
+    .team__title {
+        font-size: 26px;
+    }
+    .time__name {
+        font-size: 14px;
+    }
+    .change__title {
+        font-size: 26px;
+    }
+    .services__title {
+        font-size: 26px;
+    }
+    .partner__title {
+        font-size: 26px;
+    }
+}
+@media(max-width: 375px) {
+    .locksmith__btn {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .ambulance__box {
+        flex-direction: column;
+        text-align: center;
+        align-items: stretch;
+    }
+
+}
