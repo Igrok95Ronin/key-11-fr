@@ -301,6 +301,9 @@ body{
     font-weight: 700;
     text-align: center;
 }
+.flex__btn {
+    display: none;
+}
 
 @media(max-width: 1100px) {
     .time__box {
@@ -390,6 +393,15 @@ body{
     }
     .partner__title {
         font-size: 26px;
+    }
+    .flex__btn {
+        @include btn();
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        border-radius: 0px;
+        display: block;
     }
 }
 @media(max-width: 375px) {
