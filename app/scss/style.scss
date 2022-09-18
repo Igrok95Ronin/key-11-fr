@@ -250,3 +250,54 @@ body{
 .change__descr {
     line-height: 1.5;
 }
+//services
+.services {
+    font-family: Verdana, Geneva, sans-serif;
+}
+.services__title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1.1;
+    margin-bottom: 50px;
+}
+.services__box {
+    display: flex;
+    justify-content: space-evenly;
+    ul {
+        list-style: none;
+    }
+}
+.services__list {
+    font-size: 16px;
+    font-weight: bold;
+}
+//partner
+.partner {
+    font-family: Verdana, Geneva, sans-serif;
+    margin: 50px 0;
+}
+.partner__title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1.1;
+    margin-bottom: 50px;
+}
+.partner__box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
+    align-items: center;
+}
+.partner__img {
+    width: 100%;
+}
+//footer
+.footer {
+    background-color: $primaryColor;
+    color: #fff;
+    padding: 10px 0;
+    font-weight: 700;
+    text-align: center;
+}
