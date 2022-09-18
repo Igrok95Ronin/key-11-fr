@@ -1,3 +1,30 @@
+@mixin btn {
+    font-size: 20px;
+    color: #fff;
+    padding: 10px 20px 10px 50px;
+    border-radius: 5px;
+    background-color: $primaryColor;
+    font-weight: 700;
+    transition: all .5s;
+    &:hover {
+        color: #fff;
+        background-color: rgb(202, 130, 53);
+    }
+    span{
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            background: url(../../assets/img/telephone-fill.svg);
+            width: 20px;
+            height: 20px;
+            left: -25px;
+            top: 50%;
+            transform: translateY(-40%);
+        }
+    }
+}
+
 $primaryColor: rgba(197,143,86,1);
 
 * {
@@ -66,30 +93,7 @@ body{
     line-height: 1.5;
 }
 .locksmith__btn {
-    font-size: 20px;
-    color: #fff;
-    padding: 10px 20px 10px 50px;
-    border-radius: 5px;
-    background-color: $primaryColor;
-    font-weight: 700;
-    transition: all .5s;
-    &:hover {
-        color: #fff;
-        background-color: rgb(202, 130, 53);
-    }
-    span{
-        position: relative;
-        &::before {
-            content: '';
-            position: absolute;
-            background: url(../../assets/img/telephone-fill.svg);
-            width: 20px;
-            height: 20px;
-            left: -25px;
-            top: 50%;
-            transform: translateY(-40%);
-        }
-    }
+    @include btn();
 }
 //troubleshooting
 .troubleshooting {
@@ -185,4 +189,25 @@ body{
 }
 .time__name {
     font-weight: bold;
+}
+//ambulance
+.ambulance {
+    background-color: $primaryColor;
+    margin: 70px 0;
+}
+.ambulance__box {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+.ambulance__title {
+    margin: 0;
+    font-weight: 700;
+}
+.ambulance__btn {
+    @include btn();
+    background-color: black;
+    &:hover {
+        background-color: rgb(108, 64, 64);
+    }
 }
